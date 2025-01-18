@@ -1,6 +1,3 @@
-Here's the full `README.md` in English:
-
-```markdown
 # PyShop API
 
 This is a test task for the PyShop company, which includes the development of an API for user management and token handling using Django and Docker.
