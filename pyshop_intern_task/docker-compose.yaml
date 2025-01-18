@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: alexunder2003/py_shop_task
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8080"
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
